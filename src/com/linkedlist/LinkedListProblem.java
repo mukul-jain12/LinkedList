@@ -5,6 +5,9 @@ public class LinkedListProblem {
 		System.out.println("Welcome To Linked List Problem");
 
 		ListOperations.addData();
+		System.out.println("");
+		System.out.println("===================");
+		ListOperations.appendData();
 	}
 }
 
