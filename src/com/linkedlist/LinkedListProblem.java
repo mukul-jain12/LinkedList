@@ -1,31 +1,20 @@
 package com.linkedlist;
 
-import java.util.LinkedList;
-
 public class LinkedListProblem {
 	public static void main(String args[]) {
-		Node firstNode = new Node(56);
-		Node secondNode = new Node(30);
-		Node thirdNode = new Node(70);
+		System.out.println("Welcome To Linked List Problem");
 
-
-		Node head = firstNode;
-		firstNode.next = secondNode;
-		secondNode.next = thirdNode;
-		Node tail = thirdNode;
-
-		Node temp = head;
-		while (temp != null) {
-			System.out.println(temp.data);
-			temp = temp.next;
-		}
+		ListOperations.addData();
 	}
 }
 
-class Node{
-	int data;
-	Node next;
-	public Node(int info) {
-		this.data = info;
+class Node {
+	public int data;
+	public Node next;
+
+	public Node(int data) {
+		this.data = data;
+		this.next = null;
 	}
 }
+
