@@ -48,7 +48,7 @@ public class ListOperations {
 		list.popLast();
 		list.print();
 	}
-	
+
 	//find node by value
 	public static void findNodeByValue() {
 		LinkedList list = new LinkedList();
@@ -64,37 +64,37 @@ public class ListOperations {
 		list.push(70);
 		list.push(30);
 		list.push(56);
-        list.insertNode(list.head.next, 40);
-        list.print();
-    }
-	
+		list.insertNode(list.head.next, 40);
+		list.print();
+	}
+
 	//delete data from given node
 	public static void deleteDataAtGivenNode() {
 		LinkedList list = new LinkedList();
 		list.push(70);
 		list.push(30);
 		list.push(56);
-        list.insertNode(list.head.next, 40);
-        System.out.println("Before");
-        list.print();
-        System.out.println("");
-        list.deleteANode(40);
-        System.out.println("After");
-        list.print();
-    }
-	
+		list.insertNode(list.head.next, 40);
+		System.out.println("Before");
+		list.print();
+		System.out.println("");
+		list.deleteANode(40);
+		System.out.println("After");
+		list.print();
+	}
+
 	//sort operation
 	public static void sortList() {
 		LinkedList list = new LinkedList();
 		list.push(70);
 		list.push(30);
 		list.push(56);
-        list.insertNode(list.head.next, 40);
-        System.out.println("Before");
-        list.print();
-        System.out.println("");
-        list.sort();
-        System.out.println("After");
-        list.print();
+		list.insertNode(list.head.next, 40);
+		System.out.println("Before");
+		list.print();
+		System.out.println("");
+		list.sort();
+		System.out.println("After");
+		list.print();
 	}
 }

@@ -88,7 +88,7 @@ public class LinkedList {
 			System.out.println("Element is not present in the list");
 		}
 	}
-	
+
 	//delete any node from list
 	public void deleteANode(int value) {
 		if (this.head == null) {
@@ -106,25 +106,25 @@ public class LinkedList {
 
 	//sort the list in ascending order
 	public void sort() {
-        Node initialStart = head, index = null;
-        if (head == null) {
-            System.out.println("List is empty");
-            return;
-        }
-        while (initialStart != null) {
-            index = initialStart.next;
-            while (index != null) {
-                if (initialStart.data > index.data) {
-                    int temp = initialStart.data;
-                    initialStart.data = index.data;
-                    index.data = temp;
-                }
-                index = index.next;
-            }
-            initialStart = initialStart.next;
-        }
-    }
-	
+		Node initialStart = head, index = null;
+		if (head == null) {
+			System.out.println("List is empty");
+			return;
+		}
+		while (initialStart != null) {
+			index = initialStart.next;
+			while (index != null) {
+				if (initialStart.data > index.data) {
+					int temp = initialStart.data;
+					initialStart.data = index.data;
+					index.data = temp;
+				}
+				index = index.next;
+			}
+			initialStart = initialStart.next;
+		}
+	}
+
 	//print the list
 	public void print() {
 		if (head == null) {
