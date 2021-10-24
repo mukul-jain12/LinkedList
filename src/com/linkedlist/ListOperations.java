@@ -34,4 +34,13 @@ public class ListOperations {
 		list.pop();
 		list.print();
 	}
+
+	public static void deleteLastData() {
+		LinkedList list = new LinkedList();
+		list.push(70);
+		list.push(30);
+		list.push(56);
+		list.popLast();
+		list.print();
+	}
 }
