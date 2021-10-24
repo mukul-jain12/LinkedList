@@ -47,18 +47,44 @@ public class LinkedList {
 	}
 
 	public void  popLast () {
-        Node temp = head;
-        while (!temp.next.equals(tail)) {
-            temp = temp.next;
-        }
-        this.tail = temp;
-        temp.next = null;
-    }
-	
+		Node temp = head;
+		while (!temp.next.equals(tail)) {
+			temp = temp.next;
+		}
+		this.tail = temp;
+		temp.next = null;
+	}
+
+	public void findNode(int value) {
+		Node tempNode = head;
+		int index = 1;
+		boolean flag = false;
+		if (head == null) {
+			System.out.println("List is empty");
+		} 
+		else {
+			while (tempNode != null) {
+				if (tempNode.data ==  value) {
+					flag = true;
+					break;
+				}
+				index++;
+				tempNode = tempNode.next;
+			}
+		}
+		if (flag == true) {
+			System.out.println("The Value (" + value + ") you are searching is present at Index : " + (index-1) + " in the list.");
+		} 
+		else {
+			System.out.println("Element is not present in the list");
+		}
+	}
+
 	public void print() {
 		if (head == null) {
 			System.out.println("Linked List is Empty");
-		} else {
+		} 
+		else {
 			Node temp = head;
 			while (temp != null) {
 				System.out.print(temp.data+ " ");
