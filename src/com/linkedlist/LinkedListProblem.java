@@ -29,6 +29,10 @@ public class LinkedListProblem {
 		System.out.println("Find Node By Value");
 		ListOperations.findNodeByValue();
 		System.out.println("===================");
+		
+		System.out.println("Insert Element");
+		ListOperations.insertDataAtGivenNode();
+		System.out.println("\n===================");
 	}
 }
 
