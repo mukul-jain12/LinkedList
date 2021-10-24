@@ -33,6 +33,10 @@ public class LinkedListProblem {
 		System.out.println("Insert Element");
 		ListOperations.insertDataAtGivenNode();
 		System.out.println("\n===================");
+		
+		System.out.println("Delete Element");
+		ListOperations.deleteDataAtGivenNode();
+		System.out.println("\n===================");
 	}
 }
 
